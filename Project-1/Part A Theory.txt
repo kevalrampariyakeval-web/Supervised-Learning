@@ -1,0 +1,86 @@
+# Part A: Theory
+
+## 1. Introduction
+
+House Price Prediction is a Machine Learning project that predicts the price of a house based on its features, such as area, number of bedrooms, bathrooms, location, and age. Regression algorithms are used to understand the relationship between these features and house prices.
+
+## 2. What is Regression?
+
+Regression is a supervised machine learning technique used to predict continuous numerical values. For example, it can predict house prices, sales, salaries, and product demand.
+
+## 3. Simple Linear Regression
+
+Simple Linear Regression predicts the target variable using one independent variable. In this project, it uses the house area to predict the house price.
+
+**Formula:**
+
+\[
+y = b_0 + b_1x
+\]
+
+Where:
+- \(y\) = Predicted house price
+- \(x\) = House area
+- \(b_0\) = Intercept
+- \(b_1\) = Slope
+
+## 4. Multiple Linear Regression
+
+Multiple Linear Regression predicts a target variable using two or more independent variables. In this project, it can use area, bedrooms, bathrooms, location score, and other relevant features to predict house prices.
+
+## 5. Polynomial Regression
+
+Polynomial Regression models curved relationships between variables by adding polynomial features such as squared or cubed terms. It can capture nonlinear patterns that a simple straight-line model may not represent well.
+
+## 6. Gradient Descent
+
+Gradient Descent is an optimization algorithm used to minimize a model's loss function. It updates model parameters step by step to reduce prediction errors.
+
+The three main methods studied in this project are:
+
+- **Batch Gradient Descent:** Uses the entire training dataset for each update.
+- **Stochastic Gradient Descent (SGD):** Uses one training example for each update.
+- **Mini-Batch Gradient Descent:** Uses a small group of training examples for each update.
+
+## 7. Model Evaluation Metrics
+
+The performance of regression models can be evaluated using the following metrics:
+
+- **MAE (Mean Absolute Error):** Measures the average absolute difference between actual and predicted values.
+- **MSE (Mean Squared Error):** Measures the average squared prediction error.
+- **RMSE (Root Mean Squared Error):** Measures the square root of MSE and uses the same unit as the target variable.
+- **R² Score:** Measures how much variation in the target variable is explained by the model.
+- **Adjusted R² Score:** Adjusts R² according to the number of predictors and the sample size.
+
+Generally, lower MAE, MSE, and RMSE indicate smaller prediction errors, while a higher R² indicates a better fit.
+
+## 8. Bias–Variance Trade-Off
+
+The bias–variance trade-off describes the balance between a model's ability to learn patterns and its sensitivity to the training data.
+
+- **High Bias:** The model is too simple and may underfit the data.
+- **High Variance:** The model may learn noise in the training data and overfit.
+- **Balanced Model:** The model performs well on unseen data and generalizes effectively.
+
+## 9. Overfitting and Underfitting
+
+**Overfitting:** Occurs when a model learns the training data too closely but performs poorly on unseen data.
+
+**Underfitting:** Occurs when a model is too simple to learn the important patterns in the data.
+
+Comparing training and testing performance helps identify these problems.
+
+## 10. Objectives of the Project
+
+The main objectives of this project are:
+
+1. To understand and prepare a house price dataset.
+2. To implement Simple, Multiple, and Polynomial Linear Regression.
+3. To evaluate models using regression metrics.
+4. To implement and compare Gradient Descent optimization methods.
+5. To analyze bias, variance, overfitting, and underfitting.
+6. To identify a suitable model for predicting house prices.
+
+## 11. Conclusion
+
+This project explores different regression techniques for house price prediction. By comparing model performance, optimization methods, and prediction errors, the project aims to identify a model that provides accurate predictions and generalizes well to unseen data.
