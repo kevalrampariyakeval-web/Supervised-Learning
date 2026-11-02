@@ -225,9 +225,8 @@ print(f"Guessed price: ₹{model.predict(new_house)[0]:,.0f}")
 
 ---
 
-## 👤 Author
+## 👤 Author By
 
-**Your Name**
 keval Rampariya
 
 ---
