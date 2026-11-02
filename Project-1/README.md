@@ -228,12 +228,12 @@ print(f"Guessed price: ₹{model.predict(new_house)[0]:,.0f}")
 ## 👤 Author
 
 **Your Name**
-GitHub: [@your-username](https://github.com/your-username) • LinkedIn: [your-profile](https://linkedin.com/in/your-profile)
+keval Rampariya
 
 ---
 
 <div align="center">
 
-⭐ Like this project? Give it a star!
+⭐ Thank You ⭐
 
 </div>
