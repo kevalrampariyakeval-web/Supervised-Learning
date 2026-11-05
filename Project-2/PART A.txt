@@ -1,0 +1,154 @@
+PART A: CONCEPTUAL FOUNDATION (THEORY)
+
+Q1. What is Regularization in Machine Learning? Why is it needed?
+
+Written Answer:
+Regularization is a technique used in machine learning to prevent overfitting.
+It adds a penalty to the model to reduce unnecessary complexity.
+It helps the model focus on important patterns in the dataset.
+It improves the model's performance on new and unseen data.
+
+Presentation Explanation:
+Regularization is used to prevent overfitting in machine learning.
+
+Overfitting means when a model performs very well on training data but poorly on new data.
+
+Regularization controls the complexity of the model and helps it make better predictions on unseen data.
+
+In simple words, it helps our model learn properly instead of memorizing the training data.
+
+
+Q2. Difference between Ridge Regression (L2) and Lasso Regression (L1).
+
+Written Answer:
+
+Ridge Regression (L2):
+1. Ridge Regression uses the square of coefficients as a penalty.
+2. It reduces the values of coefficients but usually does not make them zero.
+3. It helps control model complexity and reduce overfitting.
+4. It is useful when most features contribute to the prediction.
+
+Lasso Regression (L1):
+1. Lasso Regression uses the absolute values of coefficients as a penalty.
+2. It can make some coefficients exactly zero.
+3. It helps in automatic feature selection.
+4. It is useful when some features are less important.
+
+Presentation Explanation:
+Ridge and Lasso are two regularization techniques used to reduce overfitting.
+
+Ridge Regression uses L2 regularization. It reduces the coefficient values but generally keeps all features in the model.
+
+Lasso Regression uses L1 regularization. It can make some coefficients exactly zero, which helps in selecting important features.
+
+The main difference is that Ridge usually keeps all features, while Lasso can remove less important features.
+
+
+Q3. What is Cross-Validation and why is it important?
+
+Written Answer:
+Cross-Validation is a technique used to evaluate the performance of a machine learning model.
+It divides the dataset into multiple subsets called folds.
+The model is trained and tested using different combinations of these folds.
+It helps measure model reliability and identify overfitting.
+
+Presentation Explanation:
+Cross-Validation is used to check how well our machine learning model performs.
+
+In this technique, we divide the dataset into different parts and use these parts for training and testing.
+
+We repeat this process multiple times to check the model's performance.
+
+It helps us understand whether our model can perform well on new and unseen data.
+
+
+Q4. Explain the following Cross-Validation techniques.
+
+A. K-Fold Cross-Validation
+
+Written Answer:
+1. The dataset is divided into K equal-sized subsets called folds.
+2. The model is trained on K-1 folds and tested on the remaining fold.
+3. This process is repeated K times, using each fold once for testing.
+4. The final performance is calculated by taking the average of all results.
+
+Presentation Explanation:
+In K-Fold Cross-Validation, we divide our dataset into five parts, for example.
+
+First, we train the model on four parts and test it on the remaining one part.
+
+Then we change the testing part and repeat the process.
+
+Finally, we calculate the average performance of all five results.
+
+
+B. Stratified K-Fold Cross-Validation
+
+Written Answer:
+1. Stratified K-Fold divides the dataset into K folds while maintaining class proportions.
+2. Each fold contains approximately the same class distribution as the original dataset.
+3. It is mainly used for classification problems, especially with imbalanced data.
+4. It provides a more reliable evaluation of model performance.
+
+Presentation Explanation:
+Stratified K-Fold is similar to normal K-Fold, but it maintains the same class distribution in every fold.
+
+For example, if our dataset contains 70% positive cases and 30% negative cases, each fold tries to maintain a similar ratio.
+
+It is mainly useful for classification problems where classes are imbalanced.
+
+It helps us get a more reliable model evaluation.
+
+
+C. Leave-One-Out Cross-Validation (LOOCV)
+
+Written Answer:
+1. LOOCV is a technique in which one data point is used for testing.
+2. All remaining data points are used to train the model.
+3. The process is repeated until every data point has been used for testing.
+4. It is useful for small datasets but requires more computational time.
+
+Presentation Explanation:
+In Leave-One-Out Cross-Validation, we use only one data point for testing and all remaining data points for training.
+
+For example, if we have 100 records, the model trains on 99 records and tests on one record.
+
+This process repeats 100 times.
+
+It is useful for small datasets, but it takes more time because the model must be trained repeatedly.
+
+
+D. Time Series Split
+
+Written Answer:
+1. Time Series Split is used to evaluate models on time-based datasets.
+2. The dataset is divided according to chronological order without shuffling.
+3. The model is trained on past observations and tested on future observations.
+4. It prevents data leakage and is useful for forecasting problems.
+
+Presentation Explanation:
+Time Series Split is used when our dataset contains date and time information.
+
+In this technique, we train the model using past data and test it using future data.
+
+For example, we can use previous months' house prices to predict future house prices.
+
+We never use future data to predict the past because it can cause data leakage.
+
+
+Q5. Why are tree-based models less sensitive to feature scaling?
+
+Written Answer:
+Tree-based models make predictions using decision rules and feature-based splitting.
+They divide data based on feature values rather than distances between observations.
+Therefore, changing the scale of features generally does not affect their splitting decisions.
+Models like Decision Tree and Random Forest usually do not require feature scaling.
+
+Presentation Explanation:
+Tree-based models are less sensitive to feature scaling because they make decisions using conditions and splitting points.
+
+For example, a Decision Tree can divide house-price data based on area or number of bedrooms.
+
+It does not depend on the distance between data points.
+
+Therefore, models like Decision Tree and Random Forest generally do not require feature scaling.
